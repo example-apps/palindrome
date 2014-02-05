@@ -3,6 +3,6 @@ class Palindrome::Simple < Palindrome::Shared
   end
 
   def is_palindrome?
-    false
+    word == word.reverse
   end
 end

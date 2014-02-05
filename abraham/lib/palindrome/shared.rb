@@ -3,7 +3,7 @@ class Palindrome::Shared
 
   class << self
     def input(arg)
-      string = arg.to_s.downcase
+      string = arg.to_s.gsub(/[^0-9A-Za-z]/, '').downcase
       new(string)
     end
   end
